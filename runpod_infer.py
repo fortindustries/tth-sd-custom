@@ -119,7 +119,7 @@ def run(job):
         num_outputs=job_input.get('num_outputs', 1),
         num_inference_steps=job_input.get('num_inference_steps', 50),
         guidance_scale=job_input['guidance_scale'],
-        scheduler=job_input.get('scheduler', "K-LMS"),
+        scheduler=job_input.get('scheduler', "EULER-A"),
         seed=job_input['seed']
     )
 
